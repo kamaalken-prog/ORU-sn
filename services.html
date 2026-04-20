@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ORU Services</title>
+    <style>
+        :root { --neon: linear-gradient(135deg, #ff00ff, #00ffff); }
+        body { background: #0a0a0a; color: white; font-family: 'Helvetica', sans-serif; padding: 20px; }
+        .product-card { background: #1a1a1a; padding: 20px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #333; }
+        input, textarea, select { width: 100%; padding: 12px; margin: 8px 0; border-radius: 8px; border: none; background: #2a2a2a; color: white; box-sizing: border-box; }
+        button { width: 100%; padding: 15px; border-radius: 10px; border: none; background: var(--neon); color: black; font-weight: bold; cursor: pointer; margin-top: 10px; }
+        h1 { background: var(--neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body>
+    <h1>🛠 Services</h1>
+    <div class="product-card">
+        <h3>Design Graphique</h3>
+        <p>Prestation : Création Logo/Flyer</p>
+        <p>Détails : Design pro pour ta marque, livraison rapide.</p>
+        <button onclick="alert('Contact WhatsApp...')">Contacter le prestataire</button>
+    </div>
+
+    <h3>Proposer un service</h3>
+    <form>
+        <input type="text" placeholder="Nom de ton service" required>
+        <select>
+            <option>Type : Design / Graphisme</option>
+            <option>Type : Coding / Web</option>
+            <option>Type : Réparation / Maintenance</option>
+            <option>Type : Autre</option>
+        </select>
+        <textarea placeholder="Décris ton service en détail..."></textarea>
+        <input type="tel" placeholder="Ton numéro WhatsApp" required>
+        <button type="submit">Publier mon service</button>
+    </form>
+</body>
+</html>
