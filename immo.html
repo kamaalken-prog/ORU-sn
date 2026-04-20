@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ORU Immo | Immobilier</title>
+    <style>
+        :root { --neon: linear-gradient(135deg, #ff00ff, #00ffff); }
+        body { background: #0a0a0a; color: white; font-family: 'Helvetica', sans-serif; padding: 20px; }
+        .product-card { background: #1a1a1a; padding: 20px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #333; }
+        input, textarea, select { width: 100%; padding: 12px; margin: 8px 0; border-radius: 8px; border: none; background: #2a2a2a; color: white; box-sizing: border-box; }
+        button { width: 100%; padding: 15px; border-radius: 10px; border: none; background: var(--neon); color: black; font-weight: bold; cursor: pointer; margin-top: 10px; }
+        h1 { background: var(--neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body>
+    <h1>🏠 Immobilier</h1>
+    <div class="product-card">
+        <h3>Appartement Moderne</h3>
+        <p>Localisation : Plateau | <b>150 000 FCFA/mois</b></p>
+        <p>Détails : 2 chambres, salon climatisé, parking sécurisé.</p>
+        <button onclick="alert('Contact WhatsApp...')">Contacter le propriétaire</button>
+    </div>
+
+    <h3>Proposer un bien</h3>
+    <form>
+        <input type="text" placeholder="Titre du bien" required>
+        <input type="text" placeholder="Localisation (Quartier)" required>
+        <input type="number" placeholder="Prix (FCFA)" required>
+        <textarea placeholder="Description complète (nombre de pièces, état, confort...)"></textarea>
+        <input type="tel" placeholder="Ton numéro WhatsApp" required>
+        <button type="submit">Publier l'annonce</button>
+    </form>
+</body>
+</html>
