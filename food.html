@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORU Food | Mya's Kitchen</title>
+    <style>
+        :root { --neon: linear-gradient(135deg, #ff00ff, #00ffff); }
+        body { background: #0a0a0a; color: white; font-family: 'Helvetica', sans-serif; padding: 20px; }
+        .product-card { background: #1a1a1a; padding: 20px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #333; }
+        input, textarea, select { width: 100%; padding: 12px; margin: 8px 0; border-radius: 8px; border: none; background: #2a2a2a; color: white; box-sizing: border-box; }
+        button { width: 100%; padding: 15px; border-radius: 10px; border: none; background: var(--neon); color: black; font-weight: bold; cursor: pointer; margin-top: 10px; }
+        h1 { background: var(--neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body>
+
+    <h1>🍲 Food & Kitchen</h1>
+
+    <div class="product-card">
+        <h3>Jolof Rice Spécial</h3>
+        <p>Qualité : Premium | <b>2500 FCFA</b></p>
+        <p>Détails : Riz parfumé, poulet braisé, sauce maison.</p>
+        <p>Livraison : Disponible</p>
+        <button onclick="alert('Redirection vers WhatsApp...')">Commander via WhatsApp</button>
+    </div>
+
+    <hr style="border:0; border-top:1px solid #333; margin: 30px 0;">
+
+    <h3>Vendre un plat</h3>
+    <form id="add-menu-form">
+        <input type="text" placeholder="Nom du plat" required>
+        <input type="number" placeholder="Prix (FCFA)" required>
+        <select>
+            <option>Qualité : Standard</option>
+            <option>Qualité : Premium</option>
+        </select>
+        <textarea placeholder="Détails (ingrédients, portions...)"></textarea>
+        <select>
+            <option>Livraison : Incluse</option>
+            <option>Livraison : En supplément</option>
+            <option>Livraison : Non disponible</option>
+        </select>
+        <input type="tel" placeholder="Ton numéro WhatsApp" required>
+        <button type="submit">Publier le menu</button>
+    </form>
+
+</body>
+</html>
