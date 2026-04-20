@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>ORU Cosmétique</title>
+    <style>
+        :root { --neon: linear-gradient(135deg, #ff00ff, #00ffff); }
+        body { background: #0a0a0a; color: white; font-family: 'Helvetica', sans-serif; padding: 20px; }
+        .product-card { background: #1a1a1a; padding: 20px; border-radius: 15px; margin-bottom: 20px; border: 1px solid #333; }
+        input, textarea, select { width: 100%; padding: 12px; margin: 8px 0; border-radius: 8px; border: none; background: #2a2a2a; color: white; box-sizing: border-box; }
+        button { width: 100%; padding: 15px; border-radius: 10px; border: none; background: var(--neon); color: black; font-weight: bold; cursor: pointer; margin-top: 10px; }
+        h1 { background: var(--neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body>
+    <h1>💄 Cosmétique</h1>
+    <div class="product-card">
+        <h3>Routine Éclat</h3>
+        <p>Prix : 8 500 FCFA</p>
+        <p>Détails : Produits naturels pour soins du visage.</p>
+        <button onclick="alert('Contact WhatsApp...')">Commander</button>
+    </div>
+
+    <h3>Proposer un produit beauté</h3>
+    <form>
+        <input type="text" placeholder="Nom du produit" required>
+        <input type="number" placeholder="Prix (FCFA)" required>
+        <textarea placeholder="Description, bienfaits, composition..."></textarea>
+        <input type="tel" placeholder="Ton numéro WhatsApp" required>
+        <button type="submit">Publier le produit</button>
+    </form>
+</body>
+</html>
