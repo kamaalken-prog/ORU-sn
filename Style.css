@@ -1,0 +1,23 @@
+:root {
+    --bg: #0a0a0a;
+    --neon: linear-gradient(135deg, #ff00ff, #00ffff); /* Dégradé Y2K */
+    --text: #ffffff;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+/* Effet Glassmorphism pour les cartes */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+h1 { background: var(--neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
