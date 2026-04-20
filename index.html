@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORU SN | Plateforme Tout-en-un</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --neon: linear-gradient(135deg, #ff00ff, #00ffff);
+            --text: #ffffff;
+        }
+        body { background-color: var(--bg); color: var(--text); font-family: 'Helvetica', sans-serif; margin: 0; padding: 20px; }
+        .hero { text-align: center; padding: 50px 0; background: var(--neon); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 2.5rem; font-weight: bold; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 20px; }
+        .card { background: rgba(255, 255, 255, 0.05); padding: 20px; border-radius: 15px; text-align: center; border: 1px solid rgba(255, 255, 255, 0.1); cursor: pointer; transition: 0.3s; }
+        .card:hover { transform: scale(1.05); background: rgba(255, 255, 255, 0.1); }
+        h2 { font-size: 1rem; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="hero">ORU SN</div>
+
+    <div class="grid">
+        <div class="card" onclick="window.location='cosmetique.html'">💄 <h2>Cosmétique</h2></div>
+        <div class="card" onclick="window.location='mode.html'">👗 <h2>Mode & Acc.</h2></div>
+        <div class="card" onclick="window.location='food.html'">🍲 <h2>Food & Kitchen</h2></div>
+        <div class="card" onclick="window.location='services.html'">🛠 <h2>Services</h2></div>
+        <div class="card" onclick="window.location='immo.html'">🏠 <h2>Immobilier</h2></div>
+        <div class="card" onclick="window.location='maison.html'">🛋 <h2>Maison & Deco</h2></div>
+    </div>
+
+</body>
+</html>
